@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>exercicio</title>
+</head>
+<style>
+	.container{
+		display: grid;
+		grid-template-areas:"header header header"
+							"esquerda meio direita"
+							"footer footer footer";
+	}
+	.texto {
+			font-size: 14px;
+		}
+	.header{
+		grid-area: header;
+		background-color: #f1f1f1;
+	}
+	.header ul li{
+		list-style: none;
+		display: inline-block;
+		text-decoration:none;
+		width: 75px;
+		background-color:#bbb;
+		padding:5px 3px;		
+	}
+	ul{
+		padding: 0px;
+		margin-top: 0px;
+	}
+	.esquerda{
+		grid-area: esquerda;
+		height: 300px;
+		background-color:#b4b4b4;
+	}
+	.meio{
+		grid-area: meio;
+		background-color:#ccc;
+	}
+	.direita{
+		grid-area: direita;
+		background-color:#b4b4b4;
+	}
+
+	.footer{
+		grid-area: footer;
+  		background-color: #f1f1f1;
+  		padding: 10px;
+  		text-align: center;
+	}
+	figure {
+			width: 140px;
+			border:1px solid #999;
+			padding:3px;
+		}
+	figcaption {
+			font-size: 14px;
+			margin-top: 5px;
+			background-color:#EEE;
+			padding: 5px;
+		}
+
+</style>
+<!--<figure>
+	<img src="1.jpg">
+	<figcaption >Caption.</figcaption>
+</figure>
+-->
+<body>
+	<div class="container">
+		<div class="header">
+			<ul>
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+				<li>item 4</li>
+				<li>item 5</li>
+			</ul>
+		</div>
+		<div class="esquerda">
+			<h1 class="texto">
+				colum1
+			</h1>
+		</div>
+		<div class="meio">
+			<h1 class="texto">
+				colum2
+			</h1>
+		</div>
+		<div class="direita">
+			<h1 class="texto">
+				colum3
+			</h1>
+		</div>
+		<div class="footer">
+			<h1 class="texto">
+				Footer
+			</h1>
+		</div>
+	</div>
+</body>
+</html>
